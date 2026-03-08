@@ -1,66 +1,138 @@
-# Healthcare Diagnosis Chatbot
+# 🏥 Healthcare Diagnosis AI Chatbot
 
-## Project Overview
+## 📌 Project Overview
 
-The Healthcare Chatbot is a Python-based desktop application designed to predict potential diseases based on user-entered symptoms. It leverages natural language processing (NLP) techniques and a pretrained Named Entity Recognition (NER) model from Huggingface to extract disease names from user input.
+The **Healthcare Diagnosis AI Chatbot** is a Python-based desktop application designed to predict possible diseases based on symptoms entered by the user.
+The system utilizes **Natural Language Processing (NLP)** and a **pretrained Named Entity Recognition (NER) model from Hugging Face** to analyze symptom descriptions and identify potential diseases.
 
-## Project Goals
+This project demonstrates how **Artificial Intelligence can assist in preliminary healthcare diagnosis** by processing user symptoms and providing possible medical insights through an interactive chatbot interface.
 
-The primary goal of this project is to provide users with accurate disease predictions based on their symptoms. By utilizing advanced NLP and machine learning models, the chatbot aims to assist users in understanding potential health issues they may be experiencing.
+---
 
-## Technologies Used
+# 🎯 Project Objective
 
-- **Python**: Core programming language used for the application.
-- **TKinter**: Python's standard GUI (Graphical User Interface) toolkit used for creating the desktop-based application.
-- **Spacy**: Open-source library for NLP tasks such as tokenization and lemmatization.
-- **Huggingface Transformers**: Utilized for accessing a pretrained model (`raynardj/ner-disease-ncbi-bionlp-bc5cdr-pubmed`) to extract disease names from user input.
-- **pip**: Python's package installer used for managing dependencies.
+The primary objective of this project is to:
 
-## Installation
+* Predict possible diseases based on user symptoms
+* Demonstrate the use of **Artificial Intelligence in healthcare applications**
+* Provide a simple **GUI-based medical chatbot**
+* Showcase the integration of **Machine Learning + NLP + Desktop Applications**
 
-To run the Healthcare Chatbot locally, follow these steps:
+---
 
-1. **Clone the repository**:
-   ```
-   git clone https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot.git
-   cd Healthcare-Diagnosis-Chatbot
-   ```
-2. **Install dependencies**:
-   ```
-     pip install -r requirements.txt
-   ```
-3. **Download Spacy**:
-   ```
-    pip install -U pip setuptools wheel
-    pip install -U spacy
-    python -m spacy download en_core_web_sm
-   ```
-4. **Download and save pre-trained model from Huggingface as newsave_model**
-   ```
-    from transformers import pipeline
-    PRETRAINED = "raynardj/ner-disease-ncbi-bionlp-bc5cdr-pubmed"
-    ners = pipeline(task="ner",model=PRETRAINED, tokenizer=PRETRAINED)
-    
-    import pickle as pk
-    with open('newsave_model', 'wb') as f:
-        pk.dump(ners, f)
-   ```
-## Usage
+# 🛠 Technologies Used
 
-1. **Run the Application**
-   ```
-   python3 ./HealthCare_App.py
-   ```
+* **Python** – Core programming language
+* **Tkinter** – Used to build the desktop GUI interface
+* **SpaCy** – NLP library used for text processing
+* **Hugging Face Transformers** – Used for accessing pretrained NER model
+* **pip** – Python dependency manager
 
-2. **Enter Symptoms**
-Use the GUI interface to enter symptoms. The chatbot will predict potential diseases based on the symptoms provided.
-Output Image
+Pretrained Model Used:
 
-3. **View results**
-The chatbot will display the predicted diseases or health conditions corresponding to the symptoms entered.
+```
+raynardj/ner-disease-ncbi-bionlp-bc5cdr-pubmed
+```
 
-## Application Overview
-![image_1](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/1.png)
-![image_2](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/2.png)
-![image_3](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/3.png)
-![image_4](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/4.png)
+---
+
+# ⚙ Installation & Running the Project
+
+Running the chatbot is **very simple**.
+
+No manual installation of libraries is required.
+
+### Step 1
+
+Download or clone the repository:
+
+```
+git clone https://github.com/dheerajyadav1712/Healthcare-Diagnosis-AI-Chatbot.git
+```
+
+---
+
+### Step 2
+
+Open the project folder and **run the launcher file**:
+
+```
+run_chatbot.bat
+```
+
+---
+
+### Step 3
+
+The launcher script will automatically:
+
+* Create a **virtual environment**
+* Install all required **Python packages**
+* Setup project dependencies
+* Start the **Healthcare Diagnosis Chatbot**
+
+So the user only needs to **run one file**.
+
+---
+
+# ▶ Running the Application
+
+After running the launcher:
+
+```
+run_chatbot.bat
+```
+
+The chatbot interface will automatically start.
+
+---
+
+# 💬 How to Use
+
+1. Launch the chatbot application
+2. Enter your symptoms in the input field
+3. The AI system analyzes the symptoms using NLP
+4. The chatbot predicts possible diseases
+5. Results are displayed on the screen
+
+---
+
+# 🖥 Application Interface
+
+### Chatbot Interface
+
+![image\_1](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/1.png)
+
+### Symptom Input Screen
+
+![image\_2](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/2.png)
+
+### Disease Prediction
+
+![image\_3](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/3.png)
+
+### Result Display
+
+![image\_4](https://github.com/riyajha2305/Healthcare-Diagnosis-Chatbot-MS-Hackathon/blob/main/HealthCare_ChatBot/images/4.png)
+
+---
+
+# 👨‍💻 Developer
+
+**Dheeraj Yadav**
+
+This project has been independently researched, designed, and developed as a **solo initiative** to demonstrate the potential of **Artificial Intelligence in healthcare diagnostics**.
+
+---
+
+# ⚠ Disclaimer
+
+This project is intended for **educational and research purposes only**.
+
+The chatbot provides **preliminary health insights** and should **not be considered a substitute for professional medical advice, diagnosis, or treatment**.
+
+Always consult a qualified healthcare professional for medical concerns.
+
+---
+
+⭐ If you find this project useful, consider **starring the repository**.
