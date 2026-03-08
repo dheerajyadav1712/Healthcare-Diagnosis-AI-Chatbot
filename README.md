@@ -1,4 +1,5 @@
 # 🏥 Healthcare Diagnosis AI Chatbot
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a03bcff7-dbe6-46b6-8ab7-5a1546108777" />
 
 ## 📌 Project Overview
 
