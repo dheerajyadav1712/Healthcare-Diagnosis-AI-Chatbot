@@ -1,5 +1,5 @@
 # 🏥 Healthcare Diagnosis AI Chatbot
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a03bcff7-dbe6-46b6-8ab7-5a1546108777" />
+<img width="1536" height="656" alt="ChatGPT Image Mar 8, 2026, 12_55_12 PM" src="https://github.com/user-attachments/assets/62936be0-011f-4a32-9b88-b2a12646542e" />
 
 ## 📌 Project Overview
 
