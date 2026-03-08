@@ -20,7 +20,7 @@ warnings.warn = warn
 # =====================================================  LOAD MODELS ==================================================
 dtc , le  = pk.load(open('./chatbot_modelsave','rb'))
 model,second_le  = pk.load(open('./chatbot_model','rb'))
-ners = pk.load(open('./newsave_model','rb'))
+ners = pk.load(open('./chatbot_modelsave','rb'))
 
 # Load NN Model 
 FILE = "./data.pth"

@@ -116,7 +116,7 @@ class ChatApplication:
         # About menu 
         about = Menu(menu, tearoff=0,font="bold",activebackground="#FFFFFF")
         menu.add_cascade(label="About", menu=about,font="bold")
-        about.add_command(label="Develpoers", command=lambda: self.msg_showinfo(f"Bot Develpoers ",f"Project Mentor - Mr.Prashant Kumar Yadav \n\nGroup number - 01 \n\nGroup Members \n\n1. Durgesh Maurya (105501) \n2. Dimpla (185506) \n3. Dev Sharan Yadav (185532) \n"),font="bold")
+        about.add_command(label="Develpoers", command=lambda: self.msg_showinfo(f"Bot Develpoers ",f"Project Mentor - Mr.Dheeraj Yadav \n\nProject Name -  HEALTHCARE DIAGNOSIS AI CHATBOT \n\nDeveloper\n\nThis project has been independently researched, designed,\nand developed as a solo initiative.\n\nEvery component including the AI model, chatbot logic,\nand system integration has been carefully crafted\nto demonstrate the potential of Artificial Intelligence\nin assisting preliminary healthcare diagnosis.\n"),font="bold")
         about.add_command(label="About Project", command=lambda: self.msg_showinfo(f"Bot V1.0.0 ",f" \tAbout Project \n\nThe primary goal of this project is to forecast the disease so that patients can get the desired output according to their primary symptoms.\n\n GitHub Link \n\nhttps://github.com/Durgesh63/HealthCare_ChatBot.git"),font="bold")
 
         # Quit menu 
